@@ -1,15 +1,15 @@
 import React from "react";
-
 import "../styles/Home.css";
+import profileImage from '../assets/profile.jpg';
 
 function Home() {
   return (
     <div className="home">
       <div className="about">
+        <img src={profileImage} alt="Profile" className="profile-image" />
         <h2> Hi, My Name is Love</h2>
         <div className="prompt">
           <p>A passionate problem solver!!</p>
- 
         </div>
       </div>
       <div className="skills">

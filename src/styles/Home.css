@@ -17,17 +17,32 @@
   color: #f0f0f0;
 }
 
+.about .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+.about img {
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  border-radius: 50%; /* Make the image circular */
+  display: block; /* Ensure image behaves as a block-level element */
+}
+
 .about h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 80px;
   color: #e9d35b;
-  height: 50px;
+  margin: 0; /* Remove default margin to ensure spacing consistency */
 }
 
 .about .prompt {
-  width: 40%;
+  width: 40%; /* Adjust as needed */
   font-size: 30px;
 }
+
 .prompt svg {
   font-size: 60px;
   margin: 5px;
@@ -57,6 +72,14 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .about {
+    flex-direction: column; /* Stack vertically on small screens */
+  }
+
+  .about img {
+    margin: 0 0 20px 0; /* Adjust spacing for mobile view */
+  }
+
   .about h2 {
     font-size: 40px;
   }
